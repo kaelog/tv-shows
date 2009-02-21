@@ -33,7 +33,16 @@ class MainHandler(webapp.RequestHandler):
 def main():
   application = webapp.WSGIApplication([('/', MainHandler),
 										('^/settings/import',views.ImportHandler),
+										('^/settings/import/last',views.ImportShowHandler),
+										
 										('^/shows/',views.ShowListHandler),
+										('^/shows/(\d+)/(\d+)',views.ShowListHandler),
+										('^/shows/(\d+)',views.ShowListHandler),
+										
+										('^/shows/filter/(.*)',views.ShowFilterHandler),
+										('^/shows/filter/(.*)/(\d+)/(\d+)',views.ShowListHandler),
+										('^/shows/filter/(.*)/(\d+)',views.ShowListHandler),
+										
 										('^/show/(.*)/',views.ShowHandler),
 										],
                                        debug=True)

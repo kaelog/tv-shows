@@ -1,0 +1,11 @@
+{%extends "../base.html"%}
+{%block title1%}Importing last shows{%endblock%}
+{%block body%}
+<h1>Importing list</h1>
+
+	<ul>
+	{%for show in shows%}
+  	<li>{{show}}</li>
+  {%endfor%}
+  </ul>  
+{%endblock%}

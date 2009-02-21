@@ -1,2 +1,42 @@
-
+{%extends "../base.html"%}
+{%block title1%}Shows list{%endblock%}
+{%block body%}
 <h1>Show list</h1>
+
+<div class="issue-list">
+  <div class="pagination">
+    {%if newest%}
+      <a class="novisit" href="{{newest}}">&laquo; Newest</a>
+    {%endif%}
+    {%if prev%}
+      <a class="novisit" href="{{prev}}">&lsaquo; Newer</a>
+    {%endif%}
+    <b>{{first}}{%if last%} - {{last}}{%endif%}</b>
+    {%if next%}<a class="novisit" href="{{next}}">Older &rsaquo;</a>
+    {%else%}<span style="color:gray">Older &rsaquo;</span>{%endif%}
+  </div>
+
+  <table id="queues">
+    {%if not shows%}
+      <tr><td colspan="9"><span class="disabled">(None)</span></td></tr>
+    {%else%}
+      {%include "show_heading.html"%}
+      {%for show in shows%}
+        {%include "show_row.html"%}
+      {%endfor%}
+    {%endif%}
+  </table>
+
+  <div class="pagination">
+    {%if newest%}
+      <a class="novisit" href="{{newest}}">&laquo; Newest</a>
+    {%endif%}
+    {%if prev%}
+      <a class="novisit" href="{{prev}}">&lsaquo; Newer</a>
+    {%endif%}
+    <b>{{first}}{%if last%} - {{last}}{%endif%}</b>
+    {%if next%}<a class="novisit" href="{{next}}">Older &rsaquo;</a>
+    {%else%}<span style="color:gray">Older &rsaquo;</span>{%endif%}
+  </div>
+</div>
+{%endblock%}

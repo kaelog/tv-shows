@@ -2,7 +2,7 @@
 from google.appengine.ext import db
 
 class Show(db.Model):
-	name = db.StringProperty(multiline=False)
+	name = db.StringProperty(multiline=True)
 	description = db.StringProperty(multiline=True)
 	
 	
