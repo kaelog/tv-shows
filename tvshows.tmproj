@@ -21,20 +21,6 @@
 	<integer>200</integer>
 	<key>metaData</key>
 	<dict>
-		<key>../../Sites/shows.html</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>6597</integer>
-				<key>line</key>
-				<integer>128</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>1878</integer>
-			<key>firstVisibleLine</key>
-			<integer>128</integer>
-		</dict>
 		<key>app.yaml</key>
 		<dict>
 			<key>caret</key>
@@ -96,14 +82,30 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>34</integer>
 				<key>line</key>
-				<integer>0</integer>
+				<integer>86</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>54</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>11</integer>
+				<key>line</key>
+				<integer>86</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>34</integer>
+				<key>line</key>
+				<integer>86</integer>
+			</dict>
 		</dict>
 		<key>views/show/index.html</key>
 		<dict>
@@ -126,7 +128,6 @@
 		<string>tvshows/views.py</string>
 		<string>tvshows/__init__.py</string>
 		<string>app.yaml</string>
-		<string>../../Sites/shows.html</string>
 		<string>main.py</string>
 		<string>views/show/index.html</string>
 	</array>
@@ -160,6 +161,6 @@
 		</dict>
 	</dict>
 	<key>windowFrame</key>
-	<string>{{247, 88}, {1149, 854}}</string>
+	<string>{{354, 300}, {1149, 854}}</string>
 </dict>
 </plist>
